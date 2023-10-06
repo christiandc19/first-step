@@ -17,7 +17,7 @@ const ContactCards = () => {
                     </div>
                     <div className='contact-card-info'>
                         <h1>CALL US</h1>
-                        <p>+1 (323) 840-1234</p>
+                        <p>+1 (323) 419-1110</p>
                     </div>
                 </div>
 
@@ -27,7 +27,7 @@ const ContactCards = () => {
                     </div>
                     <div className='contact-card-info'>
                         <h1>EMAIL</h1>
-                        <p>info@firststep.biz</p>
+                        <p>info@1ststepnow.com</p>
                     </div>
                 </div>
 
