@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap');
+
+
+.section2 {
+    padding: 5rem 0 0 0;
+}
+
+
+.section2-flex {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.section2-content-left {
+    width: 50%;
+    text-align: center;
+}
+
+.section2-content-left img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.section2-content-right {
+    width: 600px;
+    margin: auto;
+}
+
+
+.section2-content-right h2 {
+    font-size: 3rem;
+    color: #E2AB7F;
+}
+
+.section2-content-right h1 {
+    text-transform: uppercase;
+    color: #6D4321;
+    font-size: 1rem;
+    letter-spacing: 8px; 
+}
+
+
+
+@media screen and (max-width:940px) {
+    .section2-content-left {
+        width: 100%;
+    }
+
+    .section2-content-right {
+        width: 100%;
+    }
+
+    .section2-flex {
+        flex-wrap: wrap;
+    }
+
+    .section2-content-right h1 {
+        text-align: center;
+        padding: 1rem 0 0 0;
+    }
+    
+
+}
+
+
+

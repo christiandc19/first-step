@@ -1,54 +1,93 @@
-import './footer.css';
-import footerLogo from '../../assets/images/first-step-logo_v5.png';
-import { Link } from 'react-router-dom';
-import Nav from 'react-bootstrap/Nav';
-// import { useEffect } from 'react';
+import React from 'react'
+import {Link} from 'react-router-dom'
+import { BsFillArrowUpCircleFill } from 'react-icons/bs'
+import logo from '../../assets/nav-logo-bl.png'
+import './FooterStyles.css'
 
-function Footer() {
+import { Link as LinkRoll } from 'react-scroll'
 
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth",
-        });
-    };
-
+const Footer = () => {
     return (
-        <section id="footer">
-            <div id="footer-logo">
-                <img src={footerLogo} alt="logo" />
-            </div>
-            
-                <Nav id="footer-nav">
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link to="/" className="footer-nav-tab" onClick={scrollToTop}>Home</Link>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link to="/what-we-do" className="footer-nav-tab" onClick={scrollToTop}>What We Do</Link>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link to="/our-mission" className="footer-nav-tab" onClick={scrollToTop}>Our Mission</Link>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link to="/about" className="footer-nav-tab" onClick={scrollToTop}>About</Link>
-                        </Nav.Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Nav.Link>
-                            <Link to="/contact" className="footer-nav-tab" >Contact</Link>
-                        </Nav.Link>
-                    </Nav.Item>
-                </Nav>
-            
-        </section>
-    )
-};
 
-export default Footer;
+<> 
+        <div className='footer'>
+
+            <div className="footer-content container">
+
+                <div className="top">
+                    <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <Link to='/'>
+                    <div className="logo-footer">
+                        <img src={logo} alt="Logo" loading="lazy"/>
+                    </div>
+                    </Link>
+                        </LinkRoll>
+
+                    <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <BsFillArrowUpCircleFill className='footer-icon' />
+                    </LinkRoll>
+                </div>
+
+
+                <div className="col-container">
+
+                    <div className="column">
+                        <h3>Company</h3>
+
+                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <Link to='/'><p>Home</p></Link>
+                        </LinkRoll>
+
+                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <Link to='/about-us'><p>About Us</p></Link>
+                        </LinkRoll>
+
+                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <Link to='/our-mission'><p>Our Mission</p></Link>
+                        </LinkRoll>
+                    </div>
+
+
+                    <div className="column">
+                        <h3>Navigation</h3>
+
+                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <Link to='/employment'><p>Employment Assistance</p></Link>
+                        </LinkRoll>
+
+                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <Link to='/transitional-housing'><p>Transitional Housing</p></Link>
+                        </LinkRoll>
+
+                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <Link to='/other-resources '><p>Other Resources</p></Link>
+                        </LinkRoll>
+                    </div>
+
+
+                    <div className="column">
+                        <h3>Contact Us</h3>
+                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <Link to='/los-angeles'><p><a href="tel:3234191110">  (323) 419-1110</a></p></Link>
+                        </LinkRoll>
+
+                        <LinkRoll activeClass="active" to="top" spy={true} smooth={true} duration={500} >
+                        <Link to='/'><p>1800 Vine St., Suite 210, <br/>Los Angeles, CA 90028</p></Link>
+                        </LinkRoll>
+                    </div>
+
+
+                </div>
+
+                <div className='copyright'>
+                    <p>&copy; 2023 First Step. All rights reserved</p>
+                </div>
+
+            </div>
+
+        </div>
+</>
+    )
+}
+
+export default Footer
