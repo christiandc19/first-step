@@ -40,13 +40,8 @@ const Navbar = () => {
                     </li>
                     <li><Link to='/our-mission'>Our Mission</Link></li>
                     <li><Link to='/about-us'>About Us</Link></li>
+                    <li><Link to='/contact'>Contact Us</Link></li>
                 </ul>
-
-                <Link to='/contact'>
-                <div className='nav-btn'>
-                    <button>Contact Us</button>
-                </div>
-                </Link>
 
                 <div className="hamburger" onClick={handleNav}>
                     {!nav ? (<FaBars className='icon' />) : (<FaTimes className='icon' />)}

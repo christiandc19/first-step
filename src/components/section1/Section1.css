@@ -1,20 +1,20 @@
 .section1 {
     background-color: rgb(255, 255, 255);
-    padding: 5rem 0;
     position: relative;
     z-index: 1;
+    padding: 2rem 0;
 }
 
 
 .section1-header {
-    width: 70%;
+    width: 100%;
     margin: auto;
 }
 
 .section1-header h1 {
     text-align: center;
-    padding: 1rem 0;
-    font-size: 3rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .section1-content {
@@ -78,8 +78,7 @@
 @media screen and (max-width:940px) {
     .section1-header h1 {
         text-align: center;
-        padding: 1rem 0;
-        font-size: 2rem;
+        font-size: 1.2rem;
     }
 }
 

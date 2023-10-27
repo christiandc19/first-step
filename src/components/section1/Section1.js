@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 const Section1 = () => {
   return (
     <>
-      <div className='section1'>
+      <div className='section1 container'>
                     <div className='section1-header'>
                     <h1>Providing better resources to help you move forward with whatever comes next.</h1>
                     </div>
